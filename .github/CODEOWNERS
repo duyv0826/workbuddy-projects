@@ -1,0 +1,12 @@
+# CODEOWNERS — 代码归属与审查责任人
+# 语法：每行 <路径模式> <@GitHub 账号>
+# 参考：https://docs.github.com/zh/repositories/managing-your-repositories-settings-and-features/customizing-your-repository/about-code-owners
+
+# 全仓库默认审查责任人
+* @duyv0826
+
+# 各子项目细分（当前均为 duyv0826；后续可在此分配其他协作者）
+/动漫图片下载器GUI/      @duyv0826
+/FPC订单结算工具/        @duyv0826
+/Cline-DeepSeek环境搭建/ @duyv0826
+/动漫图片测试下载/       @duyv0826
