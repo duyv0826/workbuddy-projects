@@ -61,3 +61,7 @@
 提交前请确保：分支基于最新 `main`；密钥/凭证（`.env`、Cookie、API Key）不入库；必要文档已同步更新。
 
 更完整的开发协作规范（环境准备、分支管理、提交格式、PR 流程、审查标准、本地验证）见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+
+相关文档：
+- **版本与变更记录**：见 [CHANGELOG.md](./CHANGELOG.md)（语义化版本 + Keep a Changelog 格式）。
+- **提交规范与开源发布 SOP**：见 [SOP-代码提交与开源发布流程.md](./SOP-代码提交与开源发布流程.md)（含私有转公开前检查清单）。
