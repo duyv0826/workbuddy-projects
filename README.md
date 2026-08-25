@@ -40,3 +40,5 @@
 - **提交代码**：PR 请遵循 [Pull Request 模板](./.github/PULL_REQUEST_TEMPLATE.md)，含自测结果与检查清单（不提交密钥、不用 emoji 作图标、不写紫粉渐变主视觉与 AI 模板味空话）。
 
 提交前请确保：分支基于最新 `main`；密钥/凭证（`.env`、Cookie、API Key）不入库；必要文档已同步更新。
+
+更完整的开发协作规范（环境准备、分支管理、提交格式、PR 流程、审查标准、本地验证）见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
