@@ -23,7 +23,7 @@ cd workbuddy-projects
 |--------|----------|--------------|
 | 动漫图片下载器GUI | `cd 动漫图片下载器GUI && python -m venv .venv && source .venv/bin/activate`（Windows：`.venv\Scripts\activate`）`&& pip install -r requirements.txt` | `python test_logic.py`（应全部 PASS）；`QT_QPA_PLATFORM=offscreen python -c "import main"`（校验可加载） |
 | FPC订单结算工具 | 无需环境；用现代浏览器打开 `index.html` 即可 | 浏览器打开 → 录入若干行 → 点「导出 CSV」核对文件；或 `python -m http.server` 起本地服务后用 `http://` 访问，验证草稿保存 |
-| Cline-DeepSeek环境搭建 | `pip install openai python-dotenv`（详见子目录 README）；**必须**准备本地 `.env`（含 `ZHIPU_API_KEY` 等），`.env` 不入库 | `python verify_refactor.py`（需有效 API Key，属外部依赖，本地自测） |
+| Cline-DeepSeek环境搭建 | 仅标准库，**无需 pip install**；**必须**准备本地 `.env`（含 `ZHIPU_API_KEY`，可选 `ZHIPU_MODEL`），`.env` 不入库 | `python verify_refactor.py`（需有效 API Key，属外部依赖，本地自测；详见子目录 README） |
 | 动漫图片测试下载 | 无运行环境，仅存放样例图片 | 人工核对图片可正常打开 |
 
 > Python 版本：建议使用 **3.13**（与开发环境一致）。`requirements.txt` 已锁定 `PySide6==6.9.3`。
