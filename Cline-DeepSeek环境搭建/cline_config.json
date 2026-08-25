@@ -1,0 +1,27 @@
+{
+  "provider": "openai-compatible",
+  "baseUrl": "https://open.bigmodel.cn/api/paas/v4",
+  "apiKey": "在此粘贴你的 ZHIPU_API_KEY（或设在 .env，勿提交 git）",
+  "model": "glm-4.7-flash",
+  "note": "【2026-08-24 已实测跑通】当前生效模型 = 智谱 GLM-4.7-Flash（永久免费档、200K 上下文、编程 SOTA 国产第一梯队、OpenAI 兼容格式）。在 VS Code 装好 Cline 后：Cline 设置 -> 选 'OpenAI Compatible' 提供商 -> baseUrl 填 https://open.bigmodel.cn/api/paas/v4 -> 粘贴 ZHIPU_API_KEY -> 模型填 glm-4.7-flash。已用 verify_refactor.py 真实验证：HTTP 200、鉴权有效、模型名回显一致、usage 字段完整。比 OpenRouter 免费档稳定（无 429 限速、无 9/30 下线风险）。",
+  "verified_models": [
+    "glm-4.7-flash（推荐：永久免费、编程 SOTA、2026-08-24 实测跑通）"
+  ],
+  "alt_official_deepseek": {
+    "baseUrl": "https://api.deepseek.com/v1",
+    "model": "deepseek-chat",
+    "note": "用 DeepSeek 官方 Key（非完全免费，需充值/赠送额度）。"
+  },
+  "openrouter_archive": {
+    "note": "OpenRouter 上 DeepSeek 全部 :free 已于 2026-08 撤销；dots-studio/dots-3-note-preview:free 虽可用但 2026-09-30 下线。已弃用，转战智谱。",
+    "dead_free_models": [
+      "deepseek/deepseek-chat:free",
+      "deepseek/deepseek-r1:free",
+      "qwen/qwen3-32b:free",
+      "z-ai/glm-5.2:free",
+      "google/gemma-4-31b-it:free",
+      "cohere/north-mini-code:free",
+      "dots-studio/dots-3-note-preview:free（9/30 下线）"
+    ]
+  }
+}

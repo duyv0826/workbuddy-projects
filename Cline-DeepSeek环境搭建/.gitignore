@@ -1,0 +1,4 @@
+# 本地密钥与重构产物不入版本库
+.env
+*.env
+hello_world_project/main_refactored.py
