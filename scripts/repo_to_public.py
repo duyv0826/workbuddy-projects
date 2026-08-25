@@ -201,10 +201,11 @@ def flip_visibility(repo):
 
 def verify_and_report(repo):
     log("步骤6/7 校验可见性并更新访问权限说明")
-    data, _, visibility, _ = fetch_repo(repo)
+    data, err = fetch_repo(repo)
     if data is None:
-        log("  无法复核仓库状态。", "ERROR")
+        log(f"  无法复核仓库状态: {err}", "ERROR")
         sys.exit(EXIT_EXECUTE)
+    visibility = "private" if data.get("private") else "public"
     if visibility == "public":
         log("  校验通过: 仓库现已为 PUBLIC。", "OK")
     else:
