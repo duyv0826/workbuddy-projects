@@ -30,3 +30,13 @@
 ## 环境要求
 - Python 3.13+（GUI 项目依赖见各子目录 `requirements.txt`）。
 - 现代浏览器（FPC 工具）。
+
+## 贡献与问题反馈
+
+本仓库通过 GitHub 内置模板规范反馈与提交流程：
+
+- **报告缺陷**：使用 [Bug 报告模板](./.github/ISSUE_TEMPLATE/bug_report.md)，附环境信息与脱敏日志。
+- **提出功能建议**：使用 [功能建议模板](./.github/ISSUE_TEMPLATE/feature_request.md)。
+- **提交代码**：PR 请遵循 [Pull Request 模板](./.github/PULL_REQUEST_TEMPLATE.md)，含自测结果与检查清单（不提交密钥、不用 emoji 作图标、不写紫粉渐变主视觉与 AI 模板味空话）。
+
+提交前请确保：分支基于最新 `main`；密钥/凭证（`.env`、Cookie、API Key）不入库；必要文档已同步更新。
