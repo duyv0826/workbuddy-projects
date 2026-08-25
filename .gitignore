@@ -28,3 +28,7 @@ dist/
 venv/
 .venv/
 env/
+
+# ===== 仓库转公开脚本的本地备份（含配置快照，不入库）=====
+repo_to_public_backup/
+.repo_backup_tmp/
